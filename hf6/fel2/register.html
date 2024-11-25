@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Regisztráció</title>
+</head>
+<body>
+    <h1>Regisztrációs űrlap</h1>
+    <form action="process.php" method="post">
+        <label for="name">Név:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">E-mail cím:</label>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="password">Jelszó:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirm_password">Jelszó megerősítése:</label>
+        <input type="password" id="confirm_password" name="confirm_password"><br><br>
+
+        <label for="dob">Születési dátum:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Nem:</label>
+        <input type="radio" id="male" name="gender" value="Férfi">
+        <label for="male">Férfi</label>
+        <input type="radio" id="female" name="gender" value="Nő">
+        <label for="female">Nő</label>
+        <input type="radio" id="other" name="gender" value="Egyéb">
+        <label for="other">Egyéb</label><br><br>
+
+        <label>Érdeklődési területek:</label><br>
+        <input type="checkbox" id="sport" name="interests[]" value="Sport">
+        <label for="sport">Sport</label><br>
+        <input type="checkbox" id="art" name="interests[]" value="Művészet">
+        <label for="art">Művészet</label><br>
+        <input type="checkbox" id="science" name="interests[]" value="Tudomány">
+        <label for="science">Tudomány</label><br><br>
+
+        <label for="country">Ország:</label>
+        <select id="country" name="country">
+            <option value="">Válasszon</option>
+            <option value="Magyarország">Magyarország</option>
+            <option value="Szlovákia">Szlovákia</option>
+            <option value="Románia">Románia</option>
+        </select><br><br>
+
+        <input type="submit" value="Regisztráció">
+    </form>
+</body>
+</html>
